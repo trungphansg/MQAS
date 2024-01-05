@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"font": "16px sans-serif maroon", "group": "\u003cMovie\u003e", "id": "\u003cMovie\u003e", "label": "\u003cMovie\u003e", "shape": "dot", "size": 16}, {"font": "16px sans-serif maroon", "group": "\u003cHuman\u003e", "id": "\u003cHuman\u003e", "label": "\u003cHuman\u003e", "shape": "dot", "size": 16}, {"font": "16px sans-serif maroon", "group": "\u003cLanguage\u003e", "id": "\u003cLanguage\u003e", "label": "\u003cLanguage\u003e", "shape": "dot", "size": 16}, {"font": "16px sans-serif maroon", "group": "\u003cCountry\u003e", "id": "\u003cCountry\u003e", "label": "\u003cCountry\u003e", "shape": "dot", "size": 16}, {"font": "16px sans-serif maroon", "group": "\u003cCompany\u003e", "id": "\u003cCompany\u003e", "label": "\u003cCompany\u003e", "shape": "dot", "size": 16}, {"font": "16px sans-serif maroon", "group": "\u003cDate\u003e", "id": "\u003cDate\u003e", "label": "\u003cDate\u003e", "shape": "dot", "size": 16}, {"font": "16px sans-serif maroon", "group": "\u003cCity\u003e", "id": "\u003cCity\u003e", "label": "\u003cCity\u003e", "shape": "dot", "size": 16}]);
+        edges = new vis.DataSet([{"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cMovie\u003e", "label": "\u003cdirector\u003e", "to": "\u003cHuman\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cMovie\u003e", "label": "\u003clanguage\u003e", "to": "\u003cLanguage\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cMovie\u003e", "label": "\u003corigin\u003e", "to": "\u003cCountry\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cMovie\u003e", "label": "\u003cproducer\u003e", "to": "\u003cCompany\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cMovie\u003e", "label": "\u003creleaseDate\u003e", "to": "\u003cDate\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cMovie\u003e", "label": "\u003cstar\u003e", "to": "\u003cHuman\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cMovie\u003e", "label": "\u003cwriter\u003e", "to": "\u003cHuman\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cHuman\u003e", "label": "\u003cbirthPlace\u003e", "to": "\u003cCity\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cHuman\u003e", "label": "\u003cdateOfBirth\u003e", "to": "\u003cDate\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cCity\u003e", "label": "\u003cbelongTo\u003e", "to": "\u003cCountry\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cCompany\u003e", "label": "\u003clocation\u003e", "to": "\u003cCity\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cCountry\u003e", "label": "\u003cofficialName\u003e", "to": "\u003cCountry\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cCountry\u003e", "label": "\u003ccapital\u003e", "to": "\u003cCity\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cCountry\u003e", "label": "\u003clargestCity\u003e", "to": "\u003cCity\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cCountry\u003e", "label": "\u003clanguage\u003e", "to": "\u003cLanguage\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cCountry\u003e", "label": "\u003cknownAs\u003e", "to": "\u003cCountry\u003e"}, {"arrows": "to", "font": "16px sans-serif navy", "from": "\u003cHuman\u003e", "label": "\u003cbirthCountry\u003e", "to": "\u003cCountry\u003e"}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.01,
+            "damping": 0.4,
+            "gravitationalConstant": -50,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>
