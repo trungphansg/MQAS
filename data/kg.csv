@@ -1,0 +1,140 @@
+head,predicate,tail,head_type,tail_type
+<2 Days in Paris>,<director>,<Julie Delpy>,<Movie>,<Human>
+<2 Days in Paris>,<language>,<French>,<Movie>,<Language>
+<2 Days in Paris>,<language>,<English>,<Movie>,<Language>
+<2 Days in Paris>,<origin>,<Germany>,<Movie>,<Country>
+<2 Days in Paris>,<origin>,<France>,<Movie>,<Country>
+<2 Days in Paris>,<producer>,<3L Filmproduktion>,<Movie>,<Company>
+<2 Days in Paris>,<producer>,<Tempête Sous un Crâne>,<Movie>,<Company>
+<2 Days in Paris>,<producer>,<Polaris Film Production & Finance>,<Movie>,<Company>
+<2 Days in Paris>,<releaseDate>,"<August 31, 2007>",<Movie>,<Date>
+<2 Days in Paris>,<star>,<Daniel Brühl>,<Movie>,<Human>
+<2 Days in Paris>,<star>,<Adam Goldberg>,<Movie>,<Human>
+<2 Days in Paris>,<star>,<Julie Delpy>,<Movie>,<Human>
+<2 Days in Paris>,<writer>,<Julie Delpy>,<Movie>,<Human>
+<Adam Goldberg>,<birthPlace>,<Santa Monica>,<Human>,<City>
+<Adam Goldberg>,<dateOfBirth>,"<October 25, 1970>",<Human>,<Date>
+<Barcelona>,<belongTo>,<Spain>,<City>,<Country>
+<BBC>,<location>,<London>,<Company>,<City>
+<Berlin>,<belongTo>,<Germany>,<City>,<Country>
+<Bernard Rose>,<birthPlace>,<London>,<Human>,<City>
+<Bernard Rose>,<dateOfBirth>,"<August 4, 1960>",<Human>,<Date>
+<Billy Zane>,<dateOfBirth>,"<February 24, 1966>",<Human>,<Date>
+<Billy Zane>,<birthPlace>,<Chicago>,<Human>,<City>
+<Canada>,<officialName>,<Canada>,<Country>,<Country>
+<Canada>,<capital>,<Ottawa>,<Country>,<City>
+<Ottawa>,<belongTo>,<Canada>,<City>,<Country>
+<Toronto>,<belongTo>,<Canada>,<City>,<Country>
+<Canada>,<largestCity>,<Toronto>,<Country>,<City>
+<Canada>,<language>,<English>,<Country>,<Language>
+<Canada>,<language>,<French>,<Country>,<Language>
+<Chicago>,<belongTo>,<USA>,<City>,<Country>
+<Daniel Brühl>,<birthPlace>,<Barcelona>,<Human>,<City>
+<Daniel Brühl>,<dateOfBirth>,"<June 16, 1978>",<Human>,<Date>
+<France>,<capital>,<Paris>,<Country>,<City>
+<France>,<largestCity>,<Paris>,<Country>,<City>
+<France>,<language>,<French>,<Country>,<Language>
+<France>,<officialName>,<French Republic>,<Country>,<Country>
+<Germany>,<capital>,<Berlin>,<Country>,<City>
+<Germany>,<largestCity>,<Berlin>,<Country>,<City>
+<Germany>,<language>,<German>,<Country>,<Language>
+<Germany>,<officialName>,<Federal Republic of Germany>,<Country>,<Country>
+<Israel>,<capital>,<Jerusalem>,<Country>,<City>
+<Israel>,<largestCity>,<Jerusalem>,<Country>,<City>
+<Israel>,<language>,<Hebrew>,<Country>,<Language>
+<Israel>,<officialName>,<State of Israel>,<Country>,<Country>
+<Italy>,<capital>,<Rome>,<Country>,<City>
+<Italy>,<largestCity>,<Rome>,<Country>,<City>
+<Rome>,<belongTo>,<Italy>,<City>,<Country>
+<Italy>,<language>,<Italian>,<Country>,<Language>
+<Italy>,<officialName>,<Italian Republic>,<Country>,<Country>
+<James Cameron>,<dateOfBirth>,"<August 16, 1954>",<Human>,<Date>
+<James Cameron>,<birthPlace>,<Kapuskasing>,<Human>,<City>
+<Jerusalem>,<belongTo>,<Israel>,<City>,<Country>
+<Julie Delpy>,<birthPlace>,<Paris>,<Human>,<City>
+<Julie Delpy>,<dateOfBirth>,"<December 21, 1969>",<Human>,<Date>
+<Kapuskasing>,<belongTo>,<Canada>,<City>,<Country>
+<Kate Winslet>,<dateOfBirth>,"<October 5, 1975>",<Human>,<Date>
+<Kate Winslet>,<birthPlace>,"<Reading, Berkshire>",<Human>,<City>
+<Ken Campbell>,<birthPlace>,<London>,<Human>,<City>
+<Ken Campbell>,<dateOfBirth>,"<December 10, 1941>",<Human>,<Date>
+<Leonardo DiCaprio>,<dateOfBirth>,"<November 11, 1974>",<Human>,<Date>
+<Leonardo DiCaprio>,<birthPlace>,<Los Angeles>,<Human>,<City>
+<Lightstorm Entertainment>,<location>,<Los Angeles>,<Company>,<City>
+<London>,<belongTo>,<UK>,<City>,<Country>
+<Los Angeles>,<belongTo>,<USA>,<City>,<Country>
+<Madrid>,<belongTo>,<Spain>,<City>,<Country>
+<Matthew Jacobs>,<birthPlace>,<London>,<Human>,<City>
+<Matthew Jacobs>,<dateOfBirth>,"<July 1, 1956>",<Human>,<Date>
+<Mexico>,<capital>,<Mexico City>,<Country>,<City>
+<Mexico>,<largestCity>,<Mexico City>,<Country>,<City>
+<Mexico City>,<belongTo>,<Mexico>,<City>,<Country>
+<Mexico>,<language>,<Spanish>,<Country>,<Language>
+<Mexico>,<officialName>,<United Mexican States>,<Country>,<Country>
+<New York>,<belongTo>,<USA>,<City>,<Country>
+<Paramount Pictures>,<location>,<Los Angeles>,<Company>,<City>
+<Paris>,<belongTo>,<France>,<City>,<Country>
+<Polaris Film Production & Finance>,<location>,<Paris>,<Company>,<City>
+"<Reading, Berkshire>",<belongTo>,<UK>,<City>,<Country>
+<Richard Borthwick>,<birthPlace>,<Jerusalem>,<Human>,<City>
+<Richard Borthwick>,<dateOfBirth>,"<January 4, 1946>",<Human>,<Date>
+<Santa Monica>,<belongTo>,<USA>,<City>,<Country>
+<Smart Money>,<director>,<Bernard Rose>,<Movie>,<Human>
+<Smart Money>,<language>,<English>,<Movie>,<Language>
+<Smart Money>,<origin>,<UK>,<Movie>,<Country>
+<Smart Money>,<producer>,<Polymuse>,<Movie>,<Company>
+<Smart Money>,<producer>,<BBC>,<Movie>,<Company>
+<Smart Money>,<releaseDate>,"<October 26, 1986>",<Movie>,<Date>
+<Smart Money>,<star>,<Ken Campbell>,<Movie>,<Human>
+<Smart Money>,<star>,<Richard Borthwick>,<Movie>,<Human>
+<Smart Money>,<star>,<Jane Bertish>,<Movie>,<Human>
+<Smart Money>,<writer>,<Matthew Jacobs>,<Movie>,<Human>
+<Spain>,<capital>,<Madrid>,<Country>,<City>
+<Spain>,<largestCity>,<Madrid>,<Country>,<City>
+<Spain>,<language>,<Spanish>,<Country>,<Language>
+<Spain>,<officialName>,<Kingdom of Spain>,<Country>,<Country>
+<Sweden>,<capital>,<Stockholm>,<Country>,<City>
+<Sweden>,<largestCity>,<Stockholm>,<Country>,<City>
+<Stockholm>,<belongTo>,<Sweden>,<City>,<Country>
+<Sweden>,<language>,<Swedish>,<Country>,<Language>
+<Sweden>,<officialName>,<Kingdom of Sweden>,<Country>,<Country>
+<Titanic>,<director>,<James Cameron>,<Movie>,<Human>
+<Titanic>,<writer>,<James Cameron>,<Movie>,<Human>
+<Titanic>,<star>,<Leonardo DiCaprio>,<Movie>,<Human>
+<Titanic>,<star>,<Kate Winslet>,<Movie>,<Human>
+<Titanic>,<star>,<Billy Zane>,<Movie>,<Human>
+<Titanic>,<origin>,<USA>,<Movie>,<Country>
+<Titanic>,<origin>,<Mexico>,<Movie>,<Country>
+<Titanic>,<language>,<English>,<Movie>,<Language>
+<Titanic>,<language>,<Swedish>,<Movie>,<Language>
+<Titanic>,<language>,<Italian>,<Movie>,<Language>
+<Titanic>,<language>,<French>,<Movie>,<Language>
+<Titanic>,<releaseDate>,"<December 19, 1997>",<Movie>,<Date>
+<Titanic>,<producer>,<Twentieth Century Fox>,<Movie>,<Company>
+<Titanic>,<producer>,<Paramount Pictures>,<Movie>,<Company>
+<Titanic>,<producer>,<Lightstorm Entertainment>,<Movie>,<Company>
+<Twentieth Century Fox>,<location>,<Los Angeles>,<Company>,<City>
+<UK>,<capital>,<London>,<Country>,<City>
+<UK>,<knownAs>,<United Kingdom>,<Country>,<Country>
+<UK>,<knownAs>,<Britain>,<Country>,<Country>
+<UK>,<largestCity>,<London>,<Country>,<City>
+<UK>,<language>,<English>,<Country>,<Language>
+<UK>,<officialName>,<United Kingdom of Great Britain and Northern Ireland>,<Country>,<Country>
+<USA>,<capital>,"<Washington, D.C.>",<Country>,<City>
+<USA>,<knownAs>,<U.S.A>,<Country>,<Country>
+<USA>,<knownAs>,<United States>,<Country>,<Country>
+<USA>,<largestCity>,<New York>,<Country>,<City>
+<USA>,<language>,<English>,<Country>,<Language>
+<USA>,<officialName>,<United States of America>,<Country>,<Country>
+"<Washington, D.C.>",<belongTo>,<USA>,<City>,<Country>
+<Adam Goldberg>,<birthCountry>,<USA>,<Human>,<Country>
+<Bernard Rose>,<birthCountry>,<UK>,<Human>,<Country>
+<Billy Zane>,<birthCountry>,<USA>,<Human>,<Country>
+<Daniel Brühl>,<birthCountry>,<Spain>,<Human>,<Country>
+<James Cameron>,<birthCountry>,<Canada>,<Human>,<Country>
+<Julie Delpy>,<birthCountry>,<France>,<Human>,<Country>
+<Kate Winslet>,<birthCountry>,<UK>,<Human>,<Country>
+<Ken Campbell>,<birthCountry>,<UK>,<Human>,<Country>
+<Leonardo DiCaprio>,<birthCountry>,<USA>,<Human>,<Country>
+<Matthew Jacobs>,<birthCountry>,<UK>,<Human>,<Country>
+<Richard Borthwick>,<birthCountry>,<Israel>,<Human>,<Country>
